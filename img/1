@@ -1,0 +1,21 @@
+1. online poaling system=>
+2.cab booking
+3.pizza order
+4.health care system 
+5.mobile system
+
+
+online poaling system==
+example:Add  poaling by Admin
+three 1Phone,2Phone,3Phone
+poal by User who is :
+supose : 	1Phone-3 User voat
+2Phone-14 User
+3Phone-30 User
+
+Result
+:3Phone is best 
+
+if posiable generate graph
+
+thanks
