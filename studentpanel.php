@@ -16,8 +16,9 @@ body {
 <body>
 <form id="form1" name="form1" method="post" action="">
 <?php
- session_start(); 
-$_SESSION['em'];
+ session_start();
+$a=".";
+$_SESSION["em"] = $a;
 
 ?>
   <table width="200" border="1" align="center">
@@ -29,7 +30,7 @@ $_SESSION['em'];
     </tr>
     <tr>
       <td width="176" valign="top" bgcolor="#0000FF"><ul id="MenuBar1" class="MenuBarVertical">
-        <li><a href="ViewProfileStudent.php">View Profile</a>          </li>
+        <li><a href="ViewProfilestudent.php">View Profile</a>          </li>
         <li><a href="UpdateProfile_student.php">Update Profile</a></li>
         <li><a href="download.php">Download</a>          </li>
 <li><a href="feedback.php">Feedback</a></li>

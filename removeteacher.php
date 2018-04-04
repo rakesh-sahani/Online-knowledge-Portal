@@ -74,7 +74,7 @@ body {
             <span class="textfieldRequiredMsg">A value is required.</span></span></td>
         </tr>
         <tr>
-          <td><input type="submit" name="s1" value="Submit" /></td>
+          <td><input type="submit" name="s1" value="Summit" /></td>
         </tr>
       </table>        <p align="justify" class="style17">&nbsp;</p></td>
     </tr>

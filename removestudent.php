@@ -66,7 +66,7 @@ body {
           <td width="421" height="36" valign="top"><h1 class="style13">Student Remove</h1></td>
         </tr>
         <tr>
-          <td>Student Id</td>
+          <td>Subject Id</td>
         </tr>
         <tr>
           <td><span id="sprytextfield3">
@@ -74,7 +74,7 @@ body {
             <span class="textfieldRequiredMsg">A value is required.</span></span></td>
         </tr>
         <tr>
-          <td><input type="submit" name="s1" value="Submit" /></td>
+          <td><input type="submit" name="s1" value="Summit" /></td>
         </tr>
       </table>        <p align="justify" class="style17">&nbsp;</p></td>
     </tr>

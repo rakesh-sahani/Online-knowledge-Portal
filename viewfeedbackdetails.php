@@ -5,10 +5,8 @@
 <title>Untitled Document</title>
 <style type="text/css">
 body {
+	background-image: url();
 	background-color: #FFFFFF;
-	color: #FFF;
-}
-#form1 table tr td {
 	color: #000;
 }
 </style>
@@ -16,25 +14,19 @@ body {
 
 <body>
 <form id="form1" name="form1" method="post" action="">
-  <table  rules="none"width="80%" border="1" align="center" cellpadding="0" cellspacing="0">
+  <table  rules="none" width="80%" border="1" align="center">
     <tr>
-      <td bgcolor="#FFF"><img src="img/elearning-online-content-banner.jpg" width="1000" height="250" /></td>
+      <td bgcolor="#0152AD"><img src="img/elearning-online-content-banner.jpg" width="1000" height="250" /></td>
     </tr>
     <tr>
-      <td bgcolor="#FFF"><a href="admin.php">Back</a></td>
+      <td bgcolor="#0152AD">&nbsp;</td>
     </tr>
     <tr>
       <td width="798"><p><a href="studentpanel.php"></a></p>
-        <p>&nbsp;</p>
         <table rules="none" width="593" border="1" align="center" cellpadding="5" cellspacing="5">
         <tr>
         <td colspan="2" align="center"><h1>Fedback Details </h1></td>
           </tr>
-            <tr>
-              <td width="228" height="37" align="center">Teacher (By Subject)</td>
-		  <td width="324" height="37" align="center">Message Details</td>
-        
-        </tr>
             <tr>
     <?php 
 	 
@@ -43,9 +35,9 @@ body {
 	   
 	 session_start(); 
 
-$_SESSION["sub"]="Feedback";
+$sub1= $_SESSION["sub"];
 
-$sql = "SELECT * FROM feedback";
+$sql = "SELECT * FROM feedback WHERE Subject ='". $sub1. "'";
 $result = $conn->query($sql);
 $i=0;
 while($row = $result->fetch_assoc())
@@ -54,9 +46,13 @@ while($row = $result->fetch_assoc())
 
 ?>
   
+          <td width="228" height="37">Subject</td>
+		  <td width="324" height="37"><?php echo $row["Subject"];?></td>
         
-              <td height="37" align="center"><?php echo $row["Subject"];?></td>
-              <td align="center"><?php echo $row["Suggestions_Feedback"];?></td>
+        </tr>
+            <tr>
+              <td height="37">Message Details</td>
+              <td><?php echo $row["Suggestions_Feedback"];?></td>
             </tr>
             <?php 
 		 }
@@ -67,7 +63,7 @@ while($row = $result->fetch_assoc())
       <p>&nbsp;</p></td>
     </tr>
     <tr>
-      <td bgcolor="#FFF">&nbsp;</td>
+      <td bgcolor="#0152AD">&nbsp;</td>
     </tr>
   </table>
 </form>

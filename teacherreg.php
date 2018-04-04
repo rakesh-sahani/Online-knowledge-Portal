@@ -89,7 +89,7 @@ $randval = rand();
             <tr>
               <td>Password</td>
               <td><span id="sprytextfield4">
-                <input name="text3"  value="<?php echo $randval ?>"  type="text" id="text3" size="55" />
+                <input name="text3"  value="<?php echo $randval1 ?>"  type="text" id="text3" size="55" />
               <span class="textfieldRequiredMsg">A value is required.</span></span></td>
             </tr>
             <tr>

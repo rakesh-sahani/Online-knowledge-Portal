@@ -102,7 +102,7 @@ h1 {
         </tr>
         <tr>
           <td>Upload</td>
-          <td><input type="file" name="uploaded_file" id="uploaded_file" accept = "application/msword" /></td>
+          <td><input type="file" name="uploaded_file" id="uploaded_file" /></td>
           </tr>
         <tr>
           <td>&nbsp;</td>
